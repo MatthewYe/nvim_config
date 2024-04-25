@@ -5,31 +5,6 @@ local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 capabilities.offsetEncoding = { "utf-16", "utf-8" }
 
-if vim.g.neovide then
-  -- Put anything you want to happen only in Neovide here
-  vim.o.guifont = "FiraCode Nerd Font:h14"
-  vim.o.linespace = 0
-  vim.o.neovide_scale_factor = 1.0
-  vim.g.neovide_padding_top = 0
-  vim.g.neovide_padding_bottom = 0
-  vim.g.neovide_padding_left = 0
-  vim.g.neovide_padding_right = 0
-  vim.g.neovide_scroll_animation_length = 0.3
-  vim.g.neovide_scroll_animation_far_lines = 3
-  vim.g.neovide_hide_mouse_when_typing = true
-  vim.g.neovide_theme = "auto"
-  vim.g.neovide_unlink_border_highlights = true
-  vim.g.neovide_no_idle = true
-  vim.g.neovide_fullscreen = true
-  vim.g.neovide_touch_deadzone = 6.0
-  -- vim.g.neovide_cursor_animation_length = 0.03
-  -- vim.g.neovide_cursor_trail_size = 0.8
-  vim.g.neovide_cursor_antialiasing = true
-  vim.g.neovide_cursor_animate_in_insert_mode = true
-  -- vim.g.neovide_cursor_animate_command_line = true
-  vim.g.neovide_cursor_unfocused_outline_width = 0.125
-  -- vim.g.neovide_cursor_vfx_mode = "railgun"
-end
 -- https://github.com/neovim/nvim-lspconfig/wiki/UI-Customization#show-line-diagnostics-automatically-in-hover-window
 vim.o.updatetime = 500
 local function lsp_on_attach(_, bufnr)
@@ -62,6 +37,7 @@ lspconfig.lua_ls.setup({
     },
   },
 })
+
 lspconfig.rust_analyzer.setup({
   on_attach = lsp_on_attach,
   capabilities = capabilities,
@@ -84,6 +60,7 @@ lspconfig.rust_analyzer.setup({
     },
   },
 })
+
 lspconfig.clangd.setup({
   on_attach = lsp_on_attach,
   capabilities = capabilities,
