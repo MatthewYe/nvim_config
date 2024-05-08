@@ -14,10 +14,15 @@ return {
     "hrsh7th/cmp-cmdline",
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
+    "rafamadriz/friendly-snippets", -- useful snippets
+    "onsails/lspkind.nvim", -- vs-code like pictograms
   },
   config = function()
     local luasnip = require("luasnip")
     local cmp = require("cmp")
+
+    -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
+    require("luasnip.loaders.from_vscode").lazy_load()
 
     cmp.setup({
       snippet = {
@@ -28,6 +33,9 @@ return {
           -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
           -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
         end,
+      },
+      completion = {
+        completeopt = "menu,menuone,preview",
       },
       window = {
         -- completion = cmp.config.window.bordered(),
@@ -68,12 +76,13 @@ return {
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
         -- { name = 'vsnip' }, -- For vsnip users.
-        { name = "luasnip" }, -- For luasnip users.
+        { name = "luasnip" }, -- For luasnip users. --sniptes
         -- { name = 'ultisnips' }, -- For ultisnips users.
         -- { name = 'snippy' }, -- For snippy users.
         { name = "copilot" },
-      }, {
-        { name = "buffer" },
+
+        { name = "buffer" }, -- text within current buffer
+        { name = "path" }, -- file system paths
       }),
     })
 
