@@ -22,4 +22,5 @@ return {
 	{ import = "astrocommunity.recipes.heirline-clock-statusline" },
 	{ import = "astrocommunity.recipes.heirline-nvchad-statusline" },
 	{ import = "astrocommunity.recipes.heirline-vscode-winbar" },
+	--
 }
