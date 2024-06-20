@@ -1,5 +1,8 @@
 # AstroNvim Template
 
+https://romangeber.com/blog/tech/nvim_rust_debugger
+参考这个文档配置完成，测试看文章下半部分
+
 **NOTE:** This is for AstroNvim v4+
 
 A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
