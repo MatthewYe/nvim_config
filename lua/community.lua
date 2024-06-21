@@ -13,6 +13,8 @@ return {
 	{ import = "astrocommunity.completion.copilot-cmp" },
 	{ import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
 	{ import = "astrocommunity.game.leetcode-nvim" },
+	{ import = "astrocommunity.debugging.nvim-dap-virtual-text" },
+	{ import = "astrocommunity.lsp.actions-preview-nvim" },
 	-- { import = "astrocommunity.editing-support.chatgpt-nvim"},
 	{ import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
 	{ import = "astrocommunity.utility.noice-nvim" },
