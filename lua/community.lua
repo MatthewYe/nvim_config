@@ -27,4 +27,6 @@ return {
 	{ import = "astrocommunity.recipes.heirline-nvchad-statusline" },
 	{ import = "astrocommunity.recipes.heirline-vscode-winbar" },
 	--
+	{ import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
+	{ import = "astrocommunity.fuzzy-finder.fzf-lua" },
 }
