@@ -16,6 +16,7 @@ return {
 	{ import = "astrocommunity.diagnostics.trouble-nvim" },
 	{ import = "astrocommunity.debugging.nvim-dap-virtual-text" },
 	{ import = "astrocommunity.lsp.actions-preview-nvim" },
+	{ import = "astrocommunity.lsp.lspsaga-nvim" },
 	-- { import = "astrocommunity.editing-support.chatgpt-nvim"},
 	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
 	{ import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
