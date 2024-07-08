@@ -9,6 +9,7 @@ return {
 	-- import/override with your plugins folder
 	{ import = "astrocommunity.pack.rust" },
 	{ import = "astrocommunity.pack.markdown" },
+	{ import = "astrocommunity.pack.ruby" },
 	{ import = "astrocommunity.colorscheme.tokyonight-nvim" },
 	{ import = "astrocommunity.completion.copilot-cmp" },
 	{ import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
