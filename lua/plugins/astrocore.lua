@@ -41,6 +41,25 @@ return {
         -- This can be found in the `lua/lazy_setup.lua` file
       },
     },
+    autocmds = {
+      -- autocommands are organized into augroups for easy management
+      podfile_to_ruby = {
+        -- each augroup contains a list of auto commands
+        {
+          -- create a new autocmd on the "BufRead" and "BufNewFile" events
+          event = { "BufRead", "BufNewFile" },
+          -- the pattern is the name of our file we want to match
+          pattern = { "*.podspec", "Podfile", ".Podfile.patch" },
+          -- nice description
+          desc = "Set filetype to ruby for Podfile",
+          -- add the autocmd to the newly created augroup
+          group = "podfile_to_ruby",
+          callback = function()
+            vim.bo.filetype = "ruby"
+          end,
+        },
+      },
+    },
     -- Mappings can be configured through AstroCore as well.
     -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
