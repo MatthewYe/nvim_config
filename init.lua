@@ -20,10 +20,3 @@ end
 
 require("lazy_setup")
 require("polish")
-
-local auto_command_on = vim.api.nvim_create_autocmd
-
-auto_command_on({ "BufRead", "BufNewFile" }, {
-  pattern = { "*.podspec", "Podfile", ".Podfile.patch" },
-  command = "set filetype=ruby",
-})
