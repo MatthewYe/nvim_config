@@ -10,6 +10,7 @@ return {
 	{ import = "astrocommunity.pack.rust" },
 	{ import = "astrocommunity.pack.markdown" },
 	{ import = "astrocommunity.pack.ruby" },
+	{ import = "astrocommunity.pack.java" },
 	{ import = "astrocommunity.colorscheme.tokyonight-nvim" },
 	{ import = "astrocommunity.completion.copilot-cmp" },
 	{ import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
