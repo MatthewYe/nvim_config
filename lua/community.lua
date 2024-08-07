@@ -23,6 +23,7 @@ return {
 	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
 	{ import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
 	{ import = "astrocommunity.utility.noice-nvim" },
+	-- luarocks --lua-version 5.1
 	{ import = "astrocommunity.note-taking.neorg" },
 	-- { import = "astrocommunity.bars-and-lines.lualine-nvim" },
 	{ import = "astrocommunity.recipes.heirline-mode-text-statusline" },
