@@ -23,7 +23,7 @@ return {
 	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
 	{ import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
 	{ import = "astrocommunity.utility.noice-nvim" },
-	-- { import = "astrocommunity.note-taking.neorg" },
+	{ import = "astrocommunity.note-taking.neorg" },
 	-- { import = "astrocommunity.bars-and-lines.lualine-nvim" },
 	{ import = "astrocommunity.recipes.heirline-mode-text-statusline" },
 	{ import = "astrocommunity.recipes.heirline-clock-statusline" },
@@ -32,4 +32,5 @@ return {
 	--
 	{ import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
 	-- { import = "astrocommunity.fuzzy-finder.fzf-lua" },
+	{ import = "astrocommunity.icon.mini-icons" },
 }
