@@ -13,6 +13,7 @@ return {
 	{ import = "astrocommunity.pack.java" },
 	{ import = "astrocommunity.colorscheme.tokyonight-nvim" },
 	{ import = "astrocommunity.completion.copilot-cmp" },
+	{ import = "astrocommunity.completion.avante-nvim" },
 	{ import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
 	{ import = "astrocommunity.game.leetcode-nvim" },
 	{ import = "astrocommunity.diagnostics.trouble-nvim" },
